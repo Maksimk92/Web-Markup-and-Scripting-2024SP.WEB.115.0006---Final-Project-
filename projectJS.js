@@ -1,5 +1,5 @@
 
-var button = document.getElementById('create_plane')
+
 var regex = new RegExp(/^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/)
 
 var validateEmail = document.getElementById('check_email')
