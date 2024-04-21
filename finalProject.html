@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>WEB-115 Final Project</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="projectJS.js" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .banner{
+                display: flex;
+                
+                border: 3px solid red;
+            }
+            /*
+             .days{
+                position: relative;
+                justify-content: space-between;
+                border: 2px solid black;
+                height: 400px;
+             }
+             .monday{
+                position: absolute;
+                top: 0px;
+                right: 80%;
+             }
+
+             .tuesday{
+                position: absolute;
+                top: 0px;
+                right: 55%;
+             }
+             .wednsday{
+                position: absolute;
+                top: 0px;
+                right: 30%;
+             }
+             .thursday{
+                position: absolute;
+                top: 0px;
+                right: 5%;
+             }
+
+             .friday{
+                position: absolute;
+                bottom: 0px;
+                right: 68%;
+                
+             }
+             .saturday{
+                position: absolute;
+                bottom: 0px;
+                right: 42%;
+             }
+             .sunday{
+                position: absolute;
+                bottom: 0px;
+                right: 18%;
+             }
+             */
+             
+             
+            h3{
+                text-align: center;
+            } 
+
+            
+        
+            #days {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                width: auto;
+                margin: 0 auto;
+                border: 5px solid #3a0f0f;
+                padding: 10px;
+                /*pointer-events: none;
+                opacity: 0.5;*/
+            }
+
+            .day {
+                background-color: rgb(204, 216, 220);
+                padding: 20px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .day input {
+                padding: 2px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 15px;
+                padding-top: 1px;
+            }
+
+            .day input:focus {
+                outline: none;
+                border-color: blue;
+                box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+            }
+          
+        </style>
+    </head>
+    <body>
+        <div class="banner">  
+            <div class="banner-text">
+                <h3>Maksim Kozlovskii</h3>
+                <h3>WEB.115.0006</h3>
+                <h1>Build Your Meal Plan</h1>
+                <marquee behavior="scroll" direction="left" scrollamount="2">TEST</marquee>
+            </div>
+        </div>
+        <div class="form1">
+            <form class="credentials">
+                <input type="text" name="" placeholder="User name">
+                <input type="email" id="email" placeholder="User email" required>
+                <button id="check_email">Check Email</button>
+
+            </form>
+        </div>
+
+        <div class="days" id="days">
+            <div class="day" id="monday">
+                <h3>Monday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn" ><br>
+
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In"><br>
+
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn">
+            </div>
+            <div class="day" id="tuesday">
+                <h3>Tuesday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn" ><br>
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In"><br>
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn" >
+            </div>
+            <div class="day" id="wednesday">
+                <h3>Wednesday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn"><br>
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In" ><br>
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn" >
+            </div>
+            <div class="day" id="thursday">
+                <h3>Thursday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn" ><br>
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In" ><br>
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn" >
+            </div>
+            <div class="day" id="friday">
+                <h3>Friday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn" ><br>
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In" ><br>
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn" >
+            </div>
+            <div class="day" id="saturday">
+                <h3>Saturday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn" ><br>
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In" ><br>
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn" >
+            </div>
+            <div class="day" id="sunday">
+                <h3>Sunday</h3>
+                <label for="breakfast">Breakfast</label>
+                <input type="text" id="breakfastIn" ><br>
+                <label for="snack1">Snack</label>
+                <input type="text" id="snack1In" ><br>
+                <label for="lunch">Lunch</label>
+                <input type="text" id="lunchIn" ><br>
+                <label for="snack2">Snack</label>
+                <input type="text" id="snack2In" ><br>
+                <label for="dinner">Dinner</label>
+                <input type="text" id="dinnerIn" >
+            </div>
+        </div>
+        <div>
+            <button id="create_plan">Create a meal plan</button>
+        </div>
+        
+    </body>
+</html>
