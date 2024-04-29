@@ -1,0 +1,189 @@
+
+body{
+  background-color: rgb(203, 228, 218);
+}
+
+.banner{
+    display: flex;
+    background-image: url('banner.png');
+    background-size: 100% 200%;
+    background-position: center;
+    height: 300px;
+
+}
+
+
+ 
+h3{
+    text-align: center;
+} 
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30hv;
+    
+  }
+  
+  .credentials {
+    width: 400px; 
+    padding: 20px;
+    
+  }
+
+  .credentials input{
+    display: block;
+    margin: 5px auto;
+    border: 3px solid rgb(240, 185, 4);
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.25s;
+    background: none;
+    
+    
+
+  }
+  .credentials input:hover{
+    background-color:rgba(8, 77, 11, 0.164); 
+
+  }
+
+  
+  input:focus{ 
+    outline: none;
+}
+
+.day {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px; 
+    margin-top: 10px;
+    padding: 20px;
+    border: 2px solid #969494; 
+    border-radius: 10px; 
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif; 
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+ 
+  h3 {
+    text-transform: capitalize; 
+    font-size: 24px;
+    margin-bottom: 10px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    color:black;
+    
+  }
+  
+  
+  label {
+    display: block; 
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-style:normal;
+    font-size: 20px;
+    font-weight:bold;
+  } 
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    font-family: Arial, sans-serif; 
+  }
+  
+ 
+  select:hover {
+    border-color: #4f78b6; 
+  }
+
+#create_plan{
+    display: block;
+    margin: 20px auto;
+    color: rgb(5, 5, 5);
+    border-radius: 25px;
+    border:  2px solid rgb(240, 185, 4);
+    transition: 0.25s;
+    background: none;
+    padding: 10px 40px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#create_plan:hover{
+    background-color: #FDB750;    
+}
+
+#reset{
+    display: block;
+    margin: 10px auto;
+    color: rgb(5, 5, 5);
+    border-radius: 25px;
+    border:  2px solid rgb(240, 185, 4);
+    transition: 0.25s;
+    background: none;
+    padding: 10px 50px;
+}
+#reset:hover{
+    background-color: #FDB750;    
+}
+
+#check_email{
+    display: block;
+    margin: 10px auto;
+    color: rgb(5, 5, 5);
+    border-radius: 25px;
+    border:  2px solid rgb(240, 185, 4);
+    transition: 0.25s;
+    background: none;
+    padding: 10px 50px;
+}
+#check_email:hover{
+    background-color: #FDB750;    
+}
+
+#monday{
+    background-image: url('monday.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+#tuesday{
+    background-image: url('tuesday.jpg');
+    background-size:100% 88%;
+    background-position:right;
+    
+}
+#wednesday{
+    background-image: url('wednesday.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#thursday{
+    background-image: url('thursday.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#friday{
+    background-image: url('friday.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#saturday{
+    background-image: url('saturday.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#sunday{
+    background-image: url('sunday.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
